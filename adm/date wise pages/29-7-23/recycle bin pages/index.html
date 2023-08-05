@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+  
+</head>
+<body>
+
+    <section className="recycle-container">
+
+        <div className="recycle-top">
+            <div>
+                <p className="recycle-heading recycle-fonts">Recycle Bin</p>
+                <p className="recycle-note recycle-fonts">Restore Deals deleted in the last 90 days</p>
+            </div>
+
+            <div className="recycle-top-right">
+                <p className="default-days recycle-fonts">Default delete Days</p>
+                <select name="" id="" className="recycle-fonts default-days-select">
+                    <option value="">30days</option>
+                    <option value="">45days</option>
+                    <option value="">60days</option>
+                    <option value="">90days</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div className="recycle-setting-btn ">
+            <button className="recycle-btn recycle-active recycle-fonts">Notes (20)</button>
+            <button className="recycle-btn recycle-fonts ">Deals (9)</button>
+            <button className="recycle-btn recycle-fonts ">Leads (6)</button>
+            <button className="recycle-btn recycle-fonts ">Company (12)</button>
+            <button className="recycle-btn recycle-fonts ">Contacts (10)</button>
+
+        </div>
+
+        <div>
+
+            <div className="recycle-search-user-section">
+                <div className="recycle-search-box">
+                    <input type="text" className="recycle-search-input recycle-fonts" placeholder="Search..." />
+                    <span className="recycle-search-icon">
+                        <img src="search.svg" alt="" />
+                    </span>
+                </div>
+
+                <div className="recycle-date" >
+                    <div className="custom-date-input">
+                        <span className="delete-icon"><img src="calendar.svg" alt=""></span>
+                        <input type="date" className="recycle-date-input">
+                      </div>
+    
+                      <span className="recycle-fonts date-to">To</span>
+    
+                      <div className="custom-date-input">
+                        <span className="delete-icon"><img src="calendar.svg" alt=""></span>
+                        <input type="date" className="recycle-date-input">
+                      </div>
+                </div>
+
+                <div className="recycle-btn">
+                    <button className="recycle-delete recycle-fonts">Delete</button>
+                    <button className="recycle-restore recycle-fonts">Restore</button>
+                </div>
+
+        </div>
+    </section> 
+    
+</body>
+</html>

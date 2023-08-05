@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.permission-fonts {
+    color: #1E2224;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.02563rem;
+    text-transform: capitalize;
+}
+
+.permission-container {
+    width: 80vw;
+    border: 1px solid red;
+    height: 65rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+/* go back button  */
+
+.back-to-user button {
+    color: #33475b;
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    border: none;
+    font-size: 0.75rem;
+    background-color: #fff;
+    cursor: pointer;
+
+}
+
+.back-to-user button span {
+    margin-left: 0.31rem;
+}
+
+
+/* go back button ends */
+
+
+
+/* user container starts */
+
+.permission-user-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 2.19rem;
+}
+
+.permission-user-icon {
+    background-color: #f3f6fa;
+    border-radius: 50%;
+    padding: 7px;
+    margin-right: 0.5rem;
+
+}
+
+.permission-user-icon img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.permission-username {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 0.1rem;
+
+}
+
+.permission-email {
+    color: #33475B;
+    font-size: 0.75rem;
+    text-transform: none;
+    margin-top: 0.1rem;
+
+}
+
+.permission-user-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    margin-right: 1rem;
+}
+
+.permission-reset-btn {
+    border-radius: 0.3125rem;
+    border: 1px solid #DCDCDC;
+    background: #FFF;
+    padding: 7px 15px;
+}
+
+.permission-reset-btn:hover {
+    background-color: #077838;
+    border: 1px solid #077838;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+/* user container ends */
+
+/* form section  */
+
+.permission-wrapper {
+    margin-top: 2.5rem;
+}
+
+.permission-display {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.permission-user-info {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.permission-input-box {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.permission-label {
+    margin-bottom: 0.56rem;
+}
+
+.permission-input {
+    font-size: 1rem;
+    outline: none;
+    padding: 1rem;
+    border-radius: 0.3125rem;
+    border: 1px solid #DCDCDC;
+    background: #F3F6FA;
+}
+
+.permission-input {
+    margin-bottom: 1.5rem;
+    width: 28rem;
+    height: 2.6875rem;
+    flex-shrink: 0;
+    border-radius: 0.3125rem;
+    border: 1px solid #DCDCDC;
+    background: #F3F6FA;
+    padding: 1rem;
+    cursor: pointer;
+
+}
+
+.permission-input:focus {
+    border: 1px solid grey;
+}
+
+.permission-team-heading {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.1rem;
+
+}
+
+.permission-note {
+    color: #33475B;
+    font-size: 0.75rem;
+    display: flex;
+    align-items: start;
+    justify-content:start;
+}
+
+.permission-team-link{
+    display: flex;
+     justify-content: start;
+     align-items: center;
+     margin-bottom: 1.5rem;
+}
+
+.permission-team-link{
+    color:#2B74DA;
+}
+
+
+/* form section ends */

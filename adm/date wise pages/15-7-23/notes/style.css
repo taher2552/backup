@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.note-display {
+    width: 38.625rem;
+    height: auto;
+    background-color: #fff;
+    border-radius: 0.3125rem;
+    border: 1px solid var(--stroke, #DCDCDC);
+    background: #FFF;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.05);
+}
+
+.notes-main {
+    width: 100%;
+    margin-right: 1rem;
+}
+
+.note-content {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.notes-by {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notes-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notes-date p{
+    padding-right: 0.75rem;
+}
+
+.arrow-greater {
+    margin-left: 1rem;
+    margin-top: 1.12rem;
+    margin-right: 0.5rem;
+}
+
+.notes-by {
+    margin-top: 1rem;
+}
+
+
+.notes-by p {
+    color: #1E2224;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.02563rem;
+    text-transform: capitalize;
+}
+
+
+.notes-by span {
+    font-weight: 600;
+}
+
+.notes-date p {
+    color: #33475B;
+    font-size: 0.75rem;
+}
+
+.three-side-dots {
+    width: 0.875rem;
+    height: 0.875rem;
+    flex-shrink: 0;
+}
+
+
+
+.notes-content p {
+    color: #1E2224;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.02563rem;
+    text-transform: capitalize;
+    margin-top: 1.19rem;
+    padding-bottom: 0.84rem;   
+}

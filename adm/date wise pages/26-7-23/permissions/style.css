@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.permission-fonts {
+    color: #1E2224;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.02563rem;
+    text-transform: capitalize;
+}
+
+.permission-container {
+    width: 80vw;
+    height: auto;
+    border: 1px solid red;
+}
+
+.permission-box{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.permission-heading {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+
+/* table css  */
+
+
+/* notification table css  */
+
+
+.permission-table table {
+    border-collapse: collapse;
+    border: 1px solid #DCDCDC;
+    width: 100%;
+
+}
+
+
+
+.permission-table th,
+.permission-table td {
+    border: 1px solid #DCDCDC;
+}
+
+#permission-border {
+    border: 1px solid #DCDCDC;
+
+
+}
+
+.permission-table td:first-child {
+    background-color: #fff;
+    width: 25%;
+
+}
+
+.permission-table td:nth-child(2) {
+    background-color: #fff;
+    width: 25%;
+}
+
+.permission-table td:nth-child(3) {
+    background-color: #fff;
+    width: 25%;
+}
+
+.permission-table td:last-child {
+    background-color: #fff;
+    width: 25%;
+}
+
+.permission-table td {
+    padding: 0.8rem;
+
+}
+
+.permission-select-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.permission-select {
+    color: #2B74DA;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.02563rem;
+    text-transform: capitalize;
+    border: 1px solid transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.permission-table th {
+    background-color: #F8FAFB;
+    color: #1E2224;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.02563rem;
+    text-transform: capitalize;
+    padding: 0.8rem;
+
+
+}
+
+.permission-table td:nth-child(1),
+.permission-table td:nth-child(2),
+.permission-table td:nth-child(3) {
+    border-right: 1px solid transparent;
+
+}
+
+.permission-table th:nth-child(1),
+.permission-table th:nth-child(2),
+.permission-table th:nth-child(3) {
+    border-right: 1px solid transparent;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #33C75A;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #33C75A;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+.permission-tab-1{
+    margin-top: 2rem;
+}
+
+.permission-tab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.3125rem;
+    border: 1px solid#DCDCDC;
+    background: #FFF;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.tab-note-2{
+    color:#33475B;
+    font-size: 0.75rem;
+    margin-top: 0.2rem;
+}
+
+.last-tab-note{
+    width:60%;
+}
+
+.permission-btn-container {
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .permission-save-btn {
+    cursor: pointer;
+    padding: 7px 15px;
+    border-radius: 0.3125rem;
+    background: #077838;
+    border: 1px solid transparent;
+    color: #fff;
+    margin-left: 0.5rem;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.02563rem;
+    text-transform: capitalize;
+    margin-right: 2rem;
+  }
+  
+  .permission-save-btn:hover {
+    border: 1px solid #077838;
+    color: #077838;
+    background-color: #fff;
+    transition: all 400ms ease-in-out;
+  }
+  
+  .permission-cancel-btn {
+    padding: 7px 15px;
+    border-radius: 0.3125rem;
+    background-color: #fff;
+    border: 1px solid #DCDCDC;
+    background: #FFF;
+    cursor: pointer;
+  }
+  
+  .permission-cancel-btn:hover {
+    color: #fff;
+    background-color: #077838;
+    transition: all 400ms ease-in-out;
+  }
+
+  .permission-btn-wrapper{
+    background: #F8FAFB;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 11rem;
+    
+  }
+
+  

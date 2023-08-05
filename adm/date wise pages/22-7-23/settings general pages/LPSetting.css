@@ -1,0 +1,76 @@
+.settings-container{
+  display:flex;
+}
+.setting-font-style {
+  color: #1e2224;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.02563rem;
+  text-transform: capitalize;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* side panel css  */
+
+.setting-side-panel {
+  width: 20vw;
+  height: auto;
+  /* overflow-y: scroll; */
+  background: #f8fafb;
+}
+.setting-side-panel p{
+  
+}
+.go-back-btn button {
+  color: #33475b;
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  padding-top: 1.19rem;
+  background-color: #f8fafb;
+  border: none;
+}
+
+.go-back-btn button span {
+  margin-left: 0.2rem;
+}
+
+.setting-heading {
+  margin-top: 1.69rem;
+  margin-left: 2rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.prefrence, .account-setup , .company-setup {
+  margin-left: 2rem;
+  margin-top: 2.25rem;
+  margin-bottom:0.88rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.prefrence-options, .account-options, .company-options {
+  margin-left: 1rem;
+  padding-top:0.62rem;
+  padding-bottom: 0.62rem;
+  padding-left: 1rem;
+  margin-right: 2rem;
+  margin-bottom: 0.4rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+
+}
+
+
+.LPsidebar-active{
+  background-color: #D2E9F3;
+}

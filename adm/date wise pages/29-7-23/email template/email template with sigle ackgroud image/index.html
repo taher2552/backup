@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Lexend Deca", sans-serif;
+      }
+
+      .welcome-email-font {
+        color: #33475b;
+        font-family: "Lexend Deca", sans-serif;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.02563rem;
+      }
+
+      .welcome-email-container {
+        max-width: 64rem;
+        height: auto;
+        background: #f8feff;
+        margin: 0 auto;
+      }
+
+      .welcome-email-main {
+        max-width: 37.5rem;
+        height: auto;
+        flex-shrink: 0;
+        background: #fff;
+        box-shadow: 0px 45px 250px 0px rgba(17, 33, 39, 0.1),
+          0px -4px 150px 0px rgba(35, 56, 65, 0.05);
+        margin: 0 auto;
+      }
+
+      .welcome-email-logo {
+        padding-left: 1.88rem;
+        padding-top: 1.25rem;
+        display: flex;
+        align-items: center;
+      }
+
+      .welcome-email-logo img {
+        margin-right: 0.5rem;
+      }
+
+      .welcome-email-lead {
+        color: #f8951e;
+        font-size: 1.125rem;
+        font-weight: 700;
+      }
+
+      .welcome-email-planner {
+        color: #1f2228;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 700;
+      }
+
+    
+
+      .dashboard-back {
+        position: relative;
+      }
+
+      .dashboard-orange {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+      }
+
+      .dashboard-leads {
+        width: 27.67444rem;
+        position: absolute;
+        top: 5rem;
+        left: 3.94rem;
+        z-index: 1;
+      }
+
+      .welcome-email-content {
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+      }
+
+      .welcome-email-heading {
+        margin-top: 1.5rem;
+        color: #1e2224;
+        font-size: 2.125rem;
+        font-weight: 500;
+        margin-bottom: 1.25rem;
+      }
+
+      .welcome-email-para p:first-child {
+        margin-bottom: 1.25rem;
+      }
+
+      .welcome-email-btn {
+        margin-top: 1.25rem;
+        padding: 0.75rem 0.94rem;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 0.3125rem;
+        background: #077838;
+        border: 1px solid transparent;
+        cursor: pointer;
+        margin-bottom: 3.12rem;
+      }
+
+      .welcome-email-btn:hover {
+        border: 1px solid #077838;
+        color: #077838;
+        background-color: #fff;
+        transition: all 0.5s ease-in-out;
+      }
+
+      .welcome-email-started {
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+      }
+
+      .get-started {
+        font-size: 1.75rem;
+        font-weight: 500;
+        margin-bottom: 1.25rem;
+        color: #1e2224;
+      }
+      .get-started-btn:hover {
+  color: #077838;
+  border: 1px solid #077838;
+  background: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+      .welcome-create {
+        padding-bottom: 2.5rem;
+        margin-bottom: 1.88rem;
+      }
+
+      .pipeline-heading {
+        font-weight: 600;
+        color: #1e2224;
+      }
+
+      .pipeline-note {
+        color: #33475b;
+      }
+
+      .welcome-media {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        align-items: center;
+        padding: 1rem;
+      }
+      .welcom-media-wrapper img {
+        width: 2rem;
+        cursor: pointer;
+      }
+      .footer-lead-planner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+
+      .welcome-footer-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #33475b;
+        font-size: 0.75rem;
+      }
+
+      .welcome-footer-details p:last-child {
+        margin-top: 1.88rem;
+        margin-bottom: 2.5rem;
+        cursor: pointer;
+      }
+
+      @media only screen and (max-width: 550px) {
+        .dashboard-leads {
+          width: 77%;
+          position: absolute;
+          top: 2rem;
+          left: 50%;
+          transform: translate(-50%, 0%);
+          z-index: 1;
+          height: auto;
+        }
+
+      }
+
+      @media only screen and (max-width: 450px) {
+
+        .welcome-create {
+          display: grid;
+          grid-template-columns: auto;
+          grid-template-rows: auto;
+          gap: 1.75rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="welcome-email-container welcome-email-font">
+      <main class="welcome-email-main">
+        <table
+          style="max-width: 37.5rem; background-color: #fff; margin: 0 auto"
+        >
+          <tr>
+            <td style="padding-left: 1.88rem; padding-top: 1.25rem">
+              <img
+                src="http://core.leadplaner.com:3001/images/lead-planer-logo.svg"
+                alt=""
+              />
+              <p style="color: #f8951e; font-size: 1.125rem; font-weight: 700">
+                <span class="welcome-email-lead">Lead</span
+                ><span class="welcome-email-planner">Planer</span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td
+              style="
+                max-width: 35rem;
+                height: auto;
+                margin: 0 auto;
+                margin-top: 1.44rem;
+              "
+            >
+    
+              <img src="welcome-email-bg.jpg" alt="" style="width:100%; height: auto; margin:0 auto">
+            </td>
+          </tr>
+          <tr>
+            <td style="margin-left: 1.25rem; margin-right: 1.25rem">
+              <p
+                style="
+                  margin-top: 1.5rem;
+                  color: #1e2224;
+                  font-size: 2.125rem;
+                  font-weight: 500;
+                  margin-bottom: 1.25rem;
+                  margin-left: 1.25rem;
+                "
+              >
+                Welcome to leadPlaner
+              </p>
+              <div style="margin-left: 1.25rem; margin-right: 1.25rem">
+                <p>Hi anant,</p>
+                <p>
+                  Seems like you joined LeadPlaner to grow your business. We've
+                  helped many businesses to reach new heights with our CRM. Now
+                  it’s your turn to grow your business to exponential
+                  heights.<br /><br />Please feel free to get in touch with us
+                  if you need any assistance or a demo of LeadPlaner CRM. We'll
+                  be happy to help you!
+                </p>
+              </div>
+              <a href="https://www.google.com/">
+                <button class="get-started-btn"
+                style="
+                  margin-top: 1.25rem;
+                  margin-left: 1.25rem;
+                  padding: 0.75rem 0.94rem;
+                  color: #fff;
+                  font-size: 1rem;
+                  font-weight: 600;
+                  border-radius: 0.3125rem;
+                  background: #077838;
+                  border: 1px solid transparent;
+                  cursor: pointer;
+                  margin-bottom: 3.12rem;
+                  /* Hover effect inline CSS */
+                  transition: all 0.5s ease-in-out;
+                "
+                onmouseover="this.style.backgroundColor='#fff'; this.style.color='#077838'; this.style.border='1px solid #077838';"
+                onmouseout="this.style.backgroundColor='#077838'; this.style.color='#fff'; this.style.border='1px solid transparent';"
+              >
+                Get started now!
+              </button>
+              
+            </a>
+            </td>
+          </tr>
+          <tr>
+            <td
+              style="
+                margin-left: 1.25rem;
+                margin-right: 1.25rem;
+                padding-bottom: 2rem;
+              "
+            >
+              <p
+                style="
+                  font-size: 1.75rem;
+                  font-weight: 500;
+                  margin-bottom: 1.25rem;
+                  color: #1e2224;
+                  margin-left: 1.25rem;
+                "
+              >
+                You can get Started With
+              </p>
+              <table style="width: 92%; margin-left: 1.25rem">
+                <tr>
+                  <td>
+                    <div>
+                      <img
+                        src="Group 321.svg"
+                        style="width: 1.8rem; margin-bottom: 0.3rem"
+                      />
+                      <p
+                        style="
+                          color: #1e2224;
+                          font-size: 0.875rem;
+                          font-weight: 600;
+                          letter-spacing: -0.02563rem;
+                          margin-bottom: 0.5rem;
+                        "
+                      >
+                        Create your own pipline
+                      </p>
+                      <p>To fit your industry and business goals</p>
+                    </div>
+                  </td>
+                  <td>
+                    <img
+                      src="dollar-circle.svg"
+                      style="width: 1.8rem; margin-bottom: 0.3rem"
+                    />
+                    <p
+                      style="
+                        color: #1e2224;
+                        font-size: 0.875rem;
+                        font-weight: 600;
+                        letter-spacing: -0.02563rem;
+                        margin-bottom: 0.5rem;
+                      "
+                    >
+                      Adding new deal or lead
+                    </p>
+                    <p>Start tracking your opportunities</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="user.svg"
+                      style="width: 1.8rem; margin-bottom: 0.3rem"
+                    />
+                    <p
+                      style="
+                        color: #1e2224;
+                        font-size: 0.875rem;
+                        font-weight: 600;
+                        letter-spacing: -0.02563rem;
+                        margin-bottom: 0.5rem;
+                      "
+                    >
+                      Create new contacts
+                    </p>
+                    <p>Add and manage contacts</p>
+                  </td>
+                  <td>
+                    <img
+                      src="profile-2user.svg"
+                      style="width: 1.8rem; margin-bottom: 0.3rem"
+                    />
+                    <p
+                      style="
+                        color: #1e2224;
+                        font-size: 0.875rem;
+                        font-weight: 600;
+                        letter-spacing: -0.02563rem;
+                        margin-bottom: 0.5rem;
+                      "
+                    >
+                      Create your team
+                    </p>
+                    <p>Start your own team to handle deals</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </main>
+      <footer>
+        <table style="width: 100%">
+          <tr>
+            <td style="display: flex; justify-content: center;">
+              <div class="welcome-media">
+                <div class="welcom-media-wrapper welcome-footer-media1">
+                  <img src="Group 327.png" />
+                </div>
+                <div class="welcom-media-wrapper welcome-footer-media2">
+                  <img src="Group 326.png" />
+                </div>
+                <div class="welcom-media-wrapper welcome-footer-media3">
+                  <img src="Group 328.png" />
+                </div>
+                <div class="welcom-media-wrapper welcome-footer-media4">
+                  <img src="Group 330.png" />
+                </div>
+                <div class="welcom-media-wrapper welcome-footer-media5">
+                  <img src="Group 331.png" />
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: center">
+              <div class="footer-lead-planner">
+                <p>
+                  <span class="welcome-email-lead">Lead</span
+                  ><span class="welcome-email-planner">Planer</span>
+                </p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: center">
+              <div class="welcome-footer-details">
+                <p style="margin-bottom: 0.4rem">
+                  © 2023 LeadPlaner Inc. All rights reserved
+                </p>
+                <p>78, St John Street, London UK. EC1V 4PW</p>
+                <p>support@leadplaner.com</p>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </footer>
+    </section>
+  </body>
+</html>

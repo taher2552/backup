@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.forget-password-font {
+    color: #1E2224;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.02563rem;
+}
+
+.forget-password-container {
+    max-width: 64rem;
+    height: auto;
+    background: #F8FEFF;
+    margin: 0 auto;
+    padding-top: 2.75rem;
+}
+
+.forget-password-main {
+    max-width: 37.5rem;
+    height: auto;
+    margin: 0 auto;
+    flex-shrink: 0;
+    background: #FFF;
+    box-shadow: 0px 45px 250px 0px rgba(17, 33, 39, 0.10), 0px -4px 150px 0px rgba(35, 56, 65, 0.05);
+    margin-bottom: 1.88rem;
+    
+}
+
+
+.forget-password-logo {
+    padding-left: 1.88rem;
+    padding-top: 1.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.forget-password-logo img {
+    margin-right: 0.5rem;
+}
+
+.forget-lead{
+    color: #F8951E;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.forget-planner {
+    color: #1F2228;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.password-reset-content{
+    margin-left: 1.25rem;
+}
+
+.password-reset-content .password-reset-heading {
+    font-size: 2.125rem;
+    font-weight: 500;
+    margin-top: 1.25rem;
+}
+
+.password-reset-content p:nth-child(2){
+    margin: 1.25rem 0;
+} 
+
+.password-reset-contact{
+    margin-bottom: 0.2rem;
+    color:#33475B;
+} 
+
+.password-reset-email{
+  color: #2B74DA;
+  cursor: pointer;
+  margin-bottom: 2.5rem;
+}
+
+.password-reset-thankyou{
+    color: #33475B;
+}
+
+.reset-password-team{
+color:#33475B;
+padding-bottom: 2.25rem;
+}
+
+.reset-passsword-btn {
+    margin-top: 1.25rem;
+    padding: 0.75rem 0.94rem;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.3125rem;
+    background: #077838;
+    border: 1px solid transparent;
+    cursor: pointer;
+    margin-bottom: 2.5rem;
+
+}
+
+.reset-passsword-btn:hover {
+    border: 1px solid #077838;
+    color: #077838;
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+
+
+
+.forget-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.88rem;
+}
+
+
+
+.forget-media-wrapper {
+    border-radius: 50%;
+    padding: 0.5rem 0.7rem;
+    background: #F8951E;
+    color: #fff;
+
+    cursor: pointer;
+}
+
+.forget-footer-media3,
+.forget-footer-media2 {
+    margin-left: 0.5rem;
+}
+
+.forget-footer-media3,
+.forget-footer-media4 {
+    margin-right: 0.5rem;
+}
+
+.footer-forget-password {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.88rem;
+}
+
+.forget-password-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #33475B;
+    font-size: 0.75rem;
+
+}
+
+.forget-password-details p:last-child {
+    margin-top: 1.88rem;
+    margin-bottom: 2.5rem;
+    cursor: pointer;
+}

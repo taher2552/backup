@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .custom-date-input {
+  position: relative;
+  display: inline-block;
+}
+
+input[type="date"] {
+  /* Hide the default arrow icon for the date input */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /* Add some padding to make room for the delete icon */
+  padding-left: 25px;
+  font-family: Arial, sans-serif; /* Change font family here */
+  font-size: 16px; /* Change font size here */
+  border: 2px solid #ccc; /* Change border styles here */
+  padding: 10px 30px; /* Adjust the padding for the right margin of the delete icon */
+  border-radius: 4px;
+  padding-left: 50px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  /* Hide the default arrow icon in WebKit browsers */
+  display: none;
+}
+
+.delete-icon {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  cursor: pointer;
+  padding-left: 5px;
+ /* Add margin-right to separate the delete icon from the date input */
+}
+
+/* Optionally, you can add styles to change the appearance of the delete icon on hover */
+.delete-icon:hover {
+  color: red; /* Change delete icon color on hover */
+}
+
+    </style>
+</head>
+<body>
+<div class="custom-date-input">
+  <span class="delete-icon">&#10005;</span>
+  <input type="date" id="date-input">
+</div>
+
+
+</body>
+</html>

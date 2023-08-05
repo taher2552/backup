@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* genral css starts */
+
+select,
+input {
+    outline: none;
+}
+
+.create-email-popup-fonts {
+    color: #1E2224;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.02563rem;
+    text-transform: capitalize;
+}
+
+.create-email-input:focus {
+    border: 1px solid grey;
+}
+
+
+
+.create-email-popup {
+    width: 33.25rem;
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+    margin: 0 auto;
+}
+
+.create-email-popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    border-bottom: 1px solid #dcdcdc;
+    margin-bottom: 1.5rem;
+}
+
+
+
+.create-email-popup-header p {
+    font-size: 1.375rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.create-email-popup-header p:last-child {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.create-email-popup-field {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.create-email-popup-field label {
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.create-email-popup-field input {
+    width: 100%;
+    border-radius: 0.3125rem;
+    border: 1px solid #C0C6CC;
+    background: #FFF;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.create-email-popup-buttons {
+    background-color: #F8FAFB;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 1rem;
+}
+
+.create-email-continue-btn {
+    color: #FFF;
+    font-size: 0.875rem;
+    border-radius: 0.3125rem;
+    background: #077838;
+    padding: 7px 15px;
+    border: 1px solid transparent;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.create-email-continue-btn:hover{
+    border: 1px solid #077838;
+    color: #077838;
+    background-color: #fff;
+}
+
+.create-email-cancel-btn {
+    font-size: 0.875rem;
+    border-radius: 0.3125rem;
+    background: #077838;
+    padding: 7px 15px;
+    border-radius: 0.3125rem;
+    border: 1px solid #DCDCDC;
+    background: #FFF;
+    cursor: pointer;
+}
+
+.create-email-cancel-btn:hover{
+    border:1px solid rgb(204, 47, 47);
+    background-color: rgb(204, 47, 47);
+    color:white;
+    transition: all 0.5s ease-in-out;
+}
