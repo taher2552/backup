@@ -1,0 +1,1155 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400&family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mob_login_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 550px;
+  margin: 0 auto;
+  padding-top: 0.8rem;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid green;
+}
+.mob_photo_container {
+  max-width: 550px;
+  margin: 0 auto;
+  padding-top: 0.8rem;
+  position: relative;
+  border: 1px solid green;
+}
+
+.mob_photo_logo{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+.mob_font {
+  color: #222;
+  font-family: DM Sans;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.mob_login_sign_up {
+  color: #222;
+  font-family: DM Sans;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-transform: capitalize;
+}
+
+.mob_login_account {
+  color: #505050;
+  font-family: DM Sans;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.mob_academy_support {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+}
+
+.mob_academy_support span {
+  color: var(--Primary, #222);
+  font-family: DM Sans;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-left: 0.3rem;
+}
+
+.mob_login_account span {
+  color: #fe5c4d;
+}
+
+.mob_login_account_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.mob_radio_wrapper {
+  width: 100%;
+}
+
+.mob_verify_time {
+  width: 70%;
+}
+
+.mob_back_arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.mob_back_arrow span {
+  margin-left: 0.3rem;
+  color: #505050;
+}
+
+.mob_radio_select {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mob_radio_box {
+  border-radius: 0.3125rem;
+  border: 1px solid #dcdcdc;
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+}
+
+.mob_phone_select select {
+  outline: none;
+  padding: 1rem;
+  border-radius: 0.3125rem;
+  border: 1px solid #dcdcdc;
+  background: #fff;
+  margin-top: -1rem;
+}
+
+.mob_radio_box label {
+  margin-left: 0.3rem;
+}
+
+.mob_login_wrapper {
+  width: 100%;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.mob_phone_input {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.mob_phone_input input {
+  border-radius: 0.3125rem;
+  border: 1px solid #dcdcdc;
+  background: #fff;
+  padding: 1rem;
+  outline: none;
+  margin-bottom: 0.94rem;
+  width: 100%;
+  margin-left: 1rem;
+}
+
+.mob_login_label_checkbox {
+  display: block;
+  text-align: left;
+  color: #515c61;
+  padding: 0;
+  position: relative;
+  padding-left: 35px;
+  margin: 0 0 6px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-transform: unset;
+  font-family: "DM Sans", sans-serif;
+}
+
+.mob_login_label_checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.mob_login_checkbox::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #e73725;
+}
+
+.mob_login_checkbox::after {
+  content: "";
+  left: 7px;
+  top: 1px;
+  width: 6px;
+  height: 13px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  display: none;
+  transition: all 0.4s ease-in-out;
+}
+
+.mob_login_label_checkbox input:checked + .mob_login_checkbox::after {
+  display: block;
+}
+
+.mob_login_label_checkbox p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.mob_login_label_checkbox p span {
+  font-weight: 600;
+}
+
+.mob_login_label_checkbox p span a {
+  color: #000000;
+}
+
+.mob_login_label_checkbox p span a:hover {
+  color: #e73725;
+  text-decoration: underline;
+  transition: all 0.4s ease-in-out;
+}
+
+.mob_login_input {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 100%;
+}
+
+.mob_login_input input {
+  border-radius: 0.3125rem;
+  border: 1px solid #dcdcdc;
+  background: #fff;
+  padding: 1rem;
+  outline: none;
+  margin-bottom: 0.94rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mob_login_check {
+  width: 100%;
+  justify-content: start;
+  padding-left: 1rem;
+}
+
+.mob_login_create_profile {
+  width: 100%;
+}
+
+.mob_btn_wrapper {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+}
+
+.mob_login_create_profile button {
+  border-radius: 0.3125rem;
+  border: 1px solid #fe5c4d;
+  width: 100%;
+  padding: 1rem;
+  cursor: pointer;
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #fe5c4d;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.mob_login_line {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.mob_login_line p {
+  position: relative;
+  font-weight: 500;
+  color: #505050;
+  font-family: DM Sans;
+  font-size: 0.875rem;
+}
+
+.mob_login_line p::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #505050;
+  left: -100%;
+  top: 50%;
+  position: absolute;
+}
+
+.pac-container {
+  max-width: 490px;
+  width: 84% !important;
+  z-index: 10000; /* Increase z-index to ensure visibility */
+}
+
+.mob_login_line p::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #505050;
+  right: -100%;
+  top: 50%;
+  position: absolute;
+}
+
+.mob_login_media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mob_login_social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3125rem;
+  border: 1px solid #dcdcdc;
+  background: #fff;
+  padding: 0.56rem 2rem;
+  width: 100%;
+  margin-top: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.mob_login_social:first-child {
+  margin-right: 1rem;
+}
+
+.mob_login_google {
+  color: #222;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-left: 0.3rem;
+}
+
+/* authentication page */
+
+.otp-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.otp-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.otp-box {
+  width: 3.5rem;
+  height: 3rem;
+  border: 1px solid #dcdcdc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.mob_otp_input {
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  width: 100%;
+  text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.mob_login_authenticate {
+  color: #000;
+  font-family: DM Sans;
+  font-size: 1.376rem;
+  font-weight: 600;
+}
+
+.mob_login_verify {
+  color: #505050;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.mob_login_verify span:first-child {
+  font-weight: 700;
+}
+
+.mob_login_verify span:last-child {
+  color: #0172ff;
+  cursor: pointer;
+}
+
+.mob_login_otp p {
+  color: #fe5c4d;
+  font-family: DM Sans;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.mob_login_otp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* authentication page  ends*/
+
+/* password get otp  */
+
+.mob_login_get_otp {
+  color: #4a6ea9;
+  font-family: DM Sans;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.mob_login_get_otp {
+  position: absolute;
+  top: 69%;
+  left: 80%;
+}
+
+.mob_get_otp_btn {
+  margin-top: 5rem;
+}
+/* password get otp ends */
+
+/* progress on sports page css */
+
+.mob_academy_progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.mob_academy_circle {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #dcdcdc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  background-color: #fff;
+  z-index: 1;
+  font-family: DM Sans;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.mob_academy_stage {
+  background-color: #fe5c4d;
+  border: 1px solid #fe5c4d;
+  color: white;
+}
+
+.mob_academy_line {
+  height: 1px;
+  width: 30px;
+  background-color: #dcdcdc;
+  z-index: 0;
+}
+
+/* progress on sports page css ends */
+
+.mob_coach {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mob_select_sports {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mob_select_sports select {
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 0.3125rem;
+  border: 1px solid #dcdcdc;
+  background: #fff;
+  outline: none;
+  color: #aaa;
+  font-family: DM Sans;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.mob_select_wrapper {
+  width: 100%;
+}
+
+.sports_blue {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: max-content;
+  padding: 0.5rem 0.75rem;
+  border-radius: 2.5rem;
+  background: #2b74da;
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.sports_blue p {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: DM Sans;
+}
+
+.sports_blue p:last-child {
+  margin-left: 1.5rem;
+}
+
+.mob_sport_view {
+  margin: 1rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: -1rem;
+  width: 100%;
+  margin-left: 2rem;
+}
+
+/* checkbox css  */
+
+.mobile_login_checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background: #fff;
+  border: 1px solid #dcdcdc;
+}
+
+.mobile_login_checkbox::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 7px;
+  top: 1px;
+  width: 6px;
+  height: 13px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  transition: all 0.4s ease-in-out;
+}
+
+.mobile_login_label_checkbox input:checked + .mobile_login_checkbox {
+  background: #e73725;
+  border: 1px solid #e73725;
+}
+
+.mobile_login_label_checkbox input:checked + .mobile_login_checkbox::after {
+  display: block;
+}
+
+/* Styles for the checkbox container */
+.mobile_login_checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background: #fff !important; /* Default background color */
+  border: 1px solid #dcdcdc !; /* Default border color */
+}
+
+/* Styles for the checkmark */
+.mobile_login_checkbox::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 6px;
+  top: 1px;
+  width: 6px;
+  height: 13px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  transition: all 0.4s ease-in-out;
+}
+
+/* When checkbox is checked */
+.mobile_login_label_checkbox input:checked + .mobile_login_checkbox {
+  background: #e73725 !important; /* Change background color */
+  border: 1px solid #e73725; /* Change border color */
+}
+
+/* Show checkmark when checkbox is checked */
+.mobile_login_label_checkbox input:checked + .mobile_login_checkbox::after {
+  display: block;
+}
+
+.mobile_login_label_checkbox {
+  display: block;
+  text-align: left;
+  color: #515c61;
+  padding: 0;
+  position: relative;
+  padding-left: 35px;
+  margin: 0 0 6px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-transform: unset;
+  font-family: "DM Sans", sans-serif;
+}
+
+.mobile_login_label_checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* .mobile_login_checkbox::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #e73725;
+} */
+
+.mobile_login_label_checkbox p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.mobile_login_label_checkbox p span {
+  font-weight: 600;
+}
+
+.mobile_login_label_checkbox p span a {
+  color: #000000;
+}
+
+.mobile_login_label_checkbox p span a:hover {
+  color: #e73725;
+  text-decoration: underline;
+  transition: all 0.4s ease-in-out;
+}
+
+/* checkbox css ends */
+
+.mob_manually {
+  color: #505050 !important;
+  font-family: DM Sans !important;
+  font-size: 0.8125rem !important;
+}
+
+.mob_address_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.mob_address_wrapper {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.mob_address_head span {
+  color: red;
+  font-size: 0.94rem;
+}
+
+/* search input box css  */
+
+/* Container for the search input */
+.city_search_container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #dcdcdc;
+  padding: 0.5rem;
+  border-radius: 0.3125rem;
+  background: #fff;
+  width: 100%;
+}
+
+.mob_address_search_wrapper {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Styles for the search icon */
+.city_search_icon {
+  padding-right: 0.5rem; /* Adjust spacing between icon and input */
+}
+
+/* Style for the input */
+.city_search_input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.search_color {
+  color: #aaa;
+}
+/* search input box css ends */
+
+.mob_manual_address_input {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  width: 100%;
+}
+
+.mob_manual_address_input input,
+.mob_manual_exp,
+.mob_manual_address_input textarea {
+  border-radius: 0.3125rem;
+  border: 1px solid #dcdcdc;
+  background: #fff;
+  color: #222;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  outline: none;
+}
+
+.mob_manual_address_input textarea::placeholder {
+  color: #aaa;
+  font-family: DM Sans;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.mob_manual_exp {
+  margin-top: 0.3rem;
+}
+
+#manualAddressInput {
+  display: none;
+}
+
+#citySearchContainer {
+  margin-bottom: 1rem;
+}
+
+.mob_manual_flex_start label span {
+  color: red;
+  font-size: 0.94rem;
+}
+
+.mob_que {
+  font-weight: 600;
+}
+
+.mob_time_to_time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mob_time_to {
+  color: #222;
+  font-family: DM Sans;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+/* photo upload page  */
+
+.mob_upload_photo {
+  width: 100%;
+  padding-left: 1rem;
+  margin-top: 1.5rem;
+}
+
+.mob_upload_photo p:last-child {
+  color: #909db0;
+  font-size: 0.75rem;
+}
+
+.mob_upload_photo p:first-child {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: #222;
+}
+
+.mob_academy_pic_upload {
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  height: auto;
+  width: 100%;
+}
+
+.mob_new_browse {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.mob_new_browse_btn {
+  background: #f3f6fa;
+  border: none;
+  outline: none;
+  color: #2b74da;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: 4%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.mob_doc_file {
+  margin-top: 0.2rem;
+  width: 100%;
+}
+
+.mob_academy_upload_input {
+  border-radius: 0.3125rem;
+  border: 1px solid #dcdcdc;
+  background: #f3f6fa;
+  padding: 0.7rem;
+  cursor: pointer;
+  height: 3rem;
+  margin-bottom: 0.7rem;
+}
+
+.mob_input_height{
+  height: 4rem;
+}
+
+.mob_academy_upload_border {
+  border-radius: 0.3125rem;
+  border: 1px dashed #2b74da;
+  background: #f3f6fa;
+  width: 100%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  position: relative;
+}
+
+.upload_file_name {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #2b74da;
+}
+
+.upload_format {
+  color: #33475b;
+  font-size: 0.75rem;
+}
+
+.upload_format_2{
+  width: 60%;
+}
+
+.preview_icon {
+  /* Adjust the spacing */
+  color: #2b74da;
+  cursor: pointer;
+  position: absolute;
+  right: 75px;
+  top: 35%;
+}
+
+/* Style for the image preview modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  animation: slideFromLeft 0.5s forwards;
+  z-index: 1001;
+}
+
+/* Style for the preview image inside the modal */
+
+.modal-content {
+  max-width: 100%;
+  max-height: 90%;
+  position: absolute;
+  top: 50%;
+  left: -100%; /* Start off-screen to the left */
+  transform: translate(-50%, -50%);
+  animation: slideFromLeft 0s forwards; /* Apply animation */
+}
+
+@keyframes slideFromLeft {
+  from {
+    left: -100%; /* Start position */
+  }
+  to {
+    left: 50%; /* End position */
+  }
+}
+
+/* Style for the close button */
+.close {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.closing-animation {
+  animation: slideToLeft 0.5s forwards; /* Apply exit animation */
+}
+
+@keyframes slideToLeft {
+  from {
+    left: 50%; /* Start position */
+  }
+  to {
+    left: -100%; /* End position */
+  }
+}
+
+.mob_banner_upload{
+  margin-top: 0.5rem;
+}
+
+
+
+.image-previews,
+.video-previews {
+  margin-bottom: 1rem;
+  display: flex; 
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap; 
+  overflow-x: auto;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.preview {
+  max-width: 100px;
+  max-height: 100px;
+  margin: 5px;
+}
+
+.mob_img_card{
+border-radius: 0.3125rem;
+background: #F3F6FA;
+width: 10.875rem;
+height: 8.25rem;
+padding: 0.5rem;
+min-width: 10.875rem; /* Set a minimum width for each card */
+margin-right: 1rem;
+}
+
+.mob_img_name{
+  font-size: 0.75rem;
+  margin-left: 0.2rem;
+}
+
+.academy_arrow_white {
+  padding: 0.3rem;
+  border-radius: 50%;
+  background-color: #F3F6FA;
+  border: 1px solid #2B74DA;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.academy_arrow_white_1 {
+  padding: 0.3rem;
+  border-radius: 50%;
+  background-color: #F3F6FA;
+  border: 1px solid #2B74DA;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  z-index: -1000;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.left_arrow,
+.right_arrow {
+  z-index: 10;
+}
+
+.academy_arrow_white_1 img {
+  position: absolute;
+  top: 38%;
+}
+.academy_arrow_white img {
+  position: absolute;
+  top: 32%;
+}
+
+.mob_card_flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mob_card_top{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.mob_img_size img, .mob_img_size video{
+  width: 9.875rem;
+height: 5.4375rem;
+flex-shrink: 0;
+border-radius: 0.3125rem;
+}
+
+#fileInput{
+  display: none;
+}
+
+.mob_img_size{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+
+/* photo upload page end */
+
+@media only screen and (max-width: 430px) {
+  .mob_login_get_otp {
+    left: 75%;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .mob_login_option {
+    flex-direction: column;
+  }
+
+  .mob_login_tabs {
+    margin-bottom: 0.5rem;
+    width: 8rem;
+  }
+
+  .mob_login_get_otp {
+    left: 70%;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .mob_open_time {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 322px) {
+  .mob_open_time {
+    font-size: 0.75rem;
+  }
+}

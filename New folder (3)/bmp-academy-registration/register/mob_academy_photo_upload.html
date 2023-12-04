@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="asset_mobile/css/mob_academy_register.css" />
+
+  
+  <style>
+    /* Adjust the styles as needed for proper alignment */
+ 
+  </style>
+
+
+</head>
+
+<body>
+  <section class="mob_photo_container">
+
+    <div class="mob_photo_logo">
+      <img src="asset_mobile/images/logo.svg" alt="" />
+    </div>
+
+    <div class="mob_login_account_wrapper">
+      <p class="mob_login_authenticate">Upload Photos & Videos</p>
+    </div>
+
+    <div class="mob_academy_progress">
+      <div class="mob_academy_circle mob_academy_stage">
+        1
+      </div>
+      <div class="mob_academy_line"></div>
+      <div class="mob_academy_circle">
+        2
+      </div>
+      <div class="mob_academy_line"></div>
+      <div class="mob_academy_circle">
+        3
+      </div>
+    </div>
+
+    <div class="mob_upload_photo">
+      <p class="mob_font">Add Institute Logo</p>
+      <p class="mob_font">Recommended image size 190x190</p>
+    </div>
+
+    <div class="mob_academy_pic_upload">
+      <div class="mob_new_browse mob_doc_file">
+        <span class="mob_font mob_academy_upload_input mob_academy_upload_border">
+
+          <button class="mob_new_browse_btn mob_font"
+          onclick="document.querySelector('.institute-logo-input').click()">Browse</button>
+
+          <input type="file" class="institute-logo-input" style="display: none;" onchange="handleLogoChange()" />
+
+          <div class="upload_file_name" id="logo-name">
+            <p>Browse image</p>
+            <p class="mob_font upload_format">Upload in format png, jpg, jpeg, gif</p>
+          </div>
+
+          <span class="preview_icon" id="logo_preview_icon" onclick="handleLogoPreviewClick()" style="display: none;">
+            <img src="asset_mobile/images/eye.svg" alt="">
+          </span>
+
+        </span>
+      </div>
+    </div>
+
+    <div class="mob_upload_photo mob_banner_upload">
+      <p class="mob_font">Add Banner Image</p>
+      <p class="mob_font">Recommended image size 820x312</p>
+    </div>
+
+    <div class="mob_academy_pic_upload">
+      <div class="mob_new_browse mob_doc_file">
+        <span class="mob_font mob_academy_upload_input mob_academy_upload_border">
+
+          <button class="mob_new_browse_btn mob_font"
+          onclick="document.querySelector('.banner-file-input').click()">Browse</button>
+
+          <input type="file" class="banner-file-input" style="display: none;" onchange="handleBannerChange()" />
+
+          <div class="upload_file_name" id="banner-name">
+            <p>Browse image</p>
+            <p class="mob_font upload_format">Upload in format png, jpg, jpeg, gif</p>
+          </div>
+
+          <span class="preview_icon" id="banner_preview_icon" onclick="handleBannerPreviewClick()" style="display: none;">
+            <img src="asset_mobile/images/eye.svg" alt="">
+          </span>
+          
+        </span>
+      </div>
+    </div>
+
+
+    <div class="mob_upload_photo mob_banner_upload">
+            <p class="mob_font">Add Institute Logo</p>
+    </div>
+
+    <div class="mob_academy_pic_upload">
+      <div class="mob_new_browse mob_doc_file">
+         
+        
+
+
+        <span class="mob_font mob_academy_upload_input mob_input_height mob_academy_upload_border">
+
+          <button for="file-upload" class="mob_new_browse_btn  mob_font" onclick="document.querySelector('#file-upload').click()">Browse</button>
+
+          <input type="file" id="file-upload" class="new-file-input" style="display: none;" multiple onchange="handleImageVideoChange()" />
+
+          <div class="upload_file_name" id="img-video-name">
+            <p>Browse multiple images/videos</p>
+            <p class="mob_font upload_format upload_format_2">Upload images/videos in formats: png, jpg, jpeg, gif, webp, mp4</p>
+          </div>
+
+        </span>
+      </div>
+    </div>
+    
+    <div class="preview-container">
+
+      <div class="image-previews"></div>
+
+      <div class="video-previews"></div>
+
+
+    </div>
+    
+    
+
+
+
+    <!-- Your modal for image preview -->
+    
+    <div class="modal" id="image-preview-modal-1">
+      <span class="close" onclick="closeLogoPreview()"><img src="asset_mobile/images/menu_cross_white.svg" alt=""></span>
+      <img class="modal-content" id="preview-image-1" src="">
+    </div>
+
+
+    <div class="modal" id="image-preview-modal-2">
+      <span class="close" onclick="closeBannerPreview()"><img src="asset_mobile/images/menu_cross_white.svg" alt=""></span>
+      <img class="modal-content" id="preview-image-2" src="">
+    </div>
+
+
+
+
+
+    <div class="mob_btn_wrapper">
+      <div class="mob_login_create_profile">
+        <button>Save</button>
+      </div>
+    </div>
+
+
+  </section>
+
+
+
+
+</body>
+<script src="asset_mobile/js/mobile_photo.js"></script>
+
+
+
+</html>

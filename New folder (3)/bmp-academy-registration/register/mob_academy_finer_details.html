@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="asset_mobile/css/mob_academy_register.css" />
+
+    <script src="jquery-3.7.1.min.js"></script>
+       
+    
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKKzPfrnhLHFG7xMO-snpRQ7ULl91iOQw&libraries=places"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <section class="mob_login_container">
+        <div class="mob_top_logo">
+            <img src="asset_mobile/images/logo.svg" alt="" />
+        </div>
+
+        <div class="mob_login_account_wrapper">
+            <p class="mob_login_authenticate">Select sports</p>
+        </div>
+
+        <div class="mob_academy_progress">
+            <div class="mob_academy_circle mob_academy_stage">
+                1
+            </div>
+            <div class="mob_academy_line"></div>
+            <div class="mob_academy_circle mob_academy_stage">
+                2
+            </div>
+            <div class="mob_academy_line"></div>
+            <div class="mob_academy_circle">
+                3
+            </div>
+
+        </div>
+
+
+        <div class="mob_address_wrapper">
+            <div class="mob_address_head">
+                <p class="mob_font mob_que">Add Address <span>*</span></p>
+
+                <div class="mobile_login_check">
+                    <label class="mobile_login_label_checkbox">
+                        <input type="checkbox"  id="addManuallyCheckbox" />
+                        <span class="mobile_login_checkbox"></span>
+                        <p class="mob_manually">Add manually</p>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mob_address_search_wrapper">
+            <div class="city_search_container" id="citySearchContainer">
+                <div class="city_search_icon">
+                    <i class="fa fa-search search_color"></i>
+                </div>
+
+                    <input type="text" class="city_search_input mob_font mob_address_new"
+                    placeholder="Search for your city by name or pin code" id="city_box" onchange="locationAdmin.check_exits_city()">
+
+                
+            </div>
+
+            <div class="mob_manual_address_input" id="manualAddressInput">
+                <input class="mob_font" type="text" placeholder="Address Line 1">
+                <input class="mob_font" type="text" placeholder="Address Line 2">
+                <input class="mob_font" type="text" placeholder="Landmark">
+                <input class="mob_font" type="text" placeholder="City">
+                <input class="mob_font" type="text" placeholder="State">
+                <input class="mob_font" type="text" placeholder="Pin Code">
+            </div>
+
+            <div class="mob_manual_address_input mob_manual_flex_start">
+                <label for="" class="mob_font mob_que">What is your total experience (in years)? <span>*</span></label>
+                <select name="" class="mob_manual_exp" id="">
+                    <option value="">Select Your Experience</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                </select>
+            </div>
+
+            <div class="mob_manual_flex_start">
+                <label for="" class="mob_font mob_que">How do you charge? <span>*</span></label>
+                <div class="city_search_container">
+                    <div class="city_search_icon">
+                        ₹
+                    </div>
+                    <input type="number" class="city_search_input mob_font" placeholder="Enter Price">
+                </div>
+            </div>
+
+            <div class="mob_address_head">
+                <p class="mob_font mob_que mob_open_time">What is your opening timings</p>
+
+                <div class="mobile_login_check">
+                    <label class="mobile_login_label_checkbox">
+                        <input type="checkbox" id="alwaysOpenCheckbox" />
+                        <span class="mobile_login_checkbox"></span>
+                        <p class="mob_manually">Always Open</p>
+                    </label>
+                </div>
+            </div>
+
+
+            <div class="mob_time_to_time" id="timeSelection">
+                <div class="mob_manual_address_input mob_manual_flex_start">
+                    <select name="" class="mob_manual_exp" id="openingTime">
+                        <option value="">Select Opening time</option>
+                    </select>
+                </div>
+
+                <div>
+                    <p class="mob_time_to">To</p>
+                </div>
+
+                <div class="mob_manual_address_input mob_manual_flex_start">
+                    <select name="" class="mob_manual_exp" id="closingTime">
+                        <option value="">Select Closing time</option>
+                    </select>
+                </div>
+
+
+            </div>
+
+            <div class="mob_manual_address_input mob_manual_flex_start mob_space">
+                <label for="" class="mob_font mob_que">Give Your Introduction <span>*</span></label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Eg :  sports Academy conducts classes in Badminton/Basketball/Cricket/tennis/any sports Coaching. It is located in .... It takes Regular Classes- at the Institute.
+                 "></textarea>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+            <div class="mob_login_create_profile">
+                <button>Save</button>
+            </div>
+
+
+
+
+    </section>
+
+</body>
+
+<script src="asset_mobile/js/mobile_address.js"></script>
+
+
+</html>

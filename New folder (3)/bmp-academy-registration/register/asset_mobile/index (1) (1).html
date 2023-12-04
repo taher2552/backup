@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <script src="jquery-3.7.1.min.js"></script>
+       
+    
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKKzPfrnhLHFG7xMO-snpRQ7ULl91iOQw&libraries=places"></script>
+    
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        
+    </head>
+    
+    <body>
+        <div class="container bg-white my-5 p-2">
+           
+            <div class="row p-2">
+               
+                <div class="col-md-3 col-6">
+                    <label for="exampleInputEmail1"> Address</label>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="city_box" onchange="locationAdmin.check_exits_city()"
+                            aria-describedby="emailHelp" placeholder="Search your location">
+                    </div>
+                    <div id="error_msg"></div>
+                </div>
+            </div>
+        </div>
+    
+      
+        <script>
+            // Your JavaScript code here
+            $(document).ready(function () {
+    
+                // Create a new Autocomplete object
+                var autocomplete = new google.maps.places.Autocomplete(
+                    document.getElementById('city_box'), {
+                    types: ['address'],
+                    componentRestrictions: { country: ["ind"] },
+    
+                });
+    
+                // Add an event listener to the search input field
+                autocomplete.addListener('place_changed', function () {
+                    // Get the place result from the Autocomplete object
+                    var place = autocomplete.getPlace();
+    
+                    console.log(place)
+    
+                    // Extract the place name from the result
+                    var name = place.name;
+    
+                    $("#pincode1").val(name)
+    
+    
+                });
+    
+    
+    
+            }); 
+        </script>
+    </body>
+    
+    </html>
+
+
+
+    
